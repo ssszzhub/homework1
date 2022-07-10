@@ -7,7 +7,7 @@ import sys
 
 symbols_list = ["-", "=", "+", "S", "P", "A"]
 threshold_list = [0, 50, 100, 150, 200]
-image_path = "girl.png" ##ชื่อรูปภาพ
+image_path = "spa.jpg" ##ชื่อรูปภาพ
 
 def print_out_ascii(array):
     #prints the coded image with symbols

@@ -1,30 +1,41 @@
 # ascii-art
 
 ## Description
-This Project will take an image and print out an [ASCII-art](https://en.wikipedia.org/wiki/ASCII_art).
+>This Project will take an image and print out an [ASCII-art](https://en.wikipedia.org/wiki/ASCII_art).
 
 ## About this Project
-This project uses [opencv](https://www.opencv.org) to process image and [numpy](https://numpy.org) to manipulate arrays. The Image is numerically coded for different threshold regions it comes under and for each coded regions , a symbol is used for printing it out in the stdout.
+>This project uses [opencv](https://www.opencv.org) to process image and [numpy](https://numpy.org) to manipulate arrays. The Image is numerically coded for different threshold regions it comes under and for each coded regions , a symbol is used for printing it out in the stdout.
 
-## Usage
-Use the Script [make_art.py](https://github.com/Shiny-Akash/python-mini-projects/blob/ascii-art/projects/asciiart/make_art.py) .
-In the command line, Enter
+## อธิบายง่ายๆ
+> โปรเจคดังกล่าว ใช้ opencv(งานภาพ) เเละ numpy(งาน array) ซึ่งเป็นเครื่องมือสำเร็จรูปของ python เเล้วผมก็นำเครื่องมือ 2 ตัวนั้นมาใช้ในการสร้าง โปรเเกรมสำหรับสร้างศิลปะ ascii art (ตัวอักษรเรียงเป็นรูป)
 
-`python3 make_art.py [image_path]`
+# <br>วิธีใช้
 
-Replace the `[image_path]` with the image you want to do ascii-art. By default it takes [sample_image.png](https://github.com/Shiny-Akash/python-mini-projects/blob/ascii-art/projects/asciiart/sample_image.png)
+## - ติดตั้ง เครื่องมือ
+    pip install opencv-python
+>
+    pip install numpy
 
-## Customization
-There are two things you can customize in [make_art.py](https://github.com/Shiny-Akash/python-mini-projects/blob/ascii-art/projects/asciiart/make_art.py).
+## - copy code
+
+## - เตรียมรูปภาพ (ควรเป็นfile .png .jpg)
+    รูปภาพต้องใส่ไว้ข้างๆ กัน
+
+## - เข้าไปเเก้ใข code
+    เเก้ file ให้ตรงกับภาพที่เรานำมาใส่
+
+    line 10 :
+
+    image_path = "spa.jpg" ##ชื่อรูปภาพ
+    image_path = "เเก้ตรงนี้" ##ชื่อรูปภาพ
+
+## - สิ่งที่สามารถเข้าไปเเก้ได้เพิ่มเติม
 
 * `symbols_list`
 * `threshold_list`
 
-Modify the threshold list to take **different threshold values** thereby changing the patterns in the printed image.
-Modify the symbols list to substitute **different symbols** in the coded patterns.
+# <br> ตัวอย่าง
 
-## Sample
-Input Image :
-![input_image](sample_image.png)
-Output :
-![output_image](sample_output.png)
+![input_image](spa.jpg)
+
+![output_image](spachar.png)
