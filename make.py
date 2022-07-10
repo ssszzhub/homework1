@@ -5,12 +5,12 @@ import numpy as np
 
 import sys
 
-symbols_list = ["#", "-", "*", ".", "+", "o"]
+symbols_list = ["-", "=", "+", "S", "P", "A"]
 threshold_list = [0, 50, 100, 150, 200]
-image_path = sys.argv[1]
+image_path = "girl.png" ##ชื่อรูปภาพ
 
 def print_out_ascii(array):
-    """prints the coded image with symbols"""
+    #prints the coded image with symbols
 
     for row in array:
         for e in row:
@@ -20,7 +20,7 @@ def print_out_ascii(array):
 
 
 def img_to_ascii(image):
-    """returns the numeric coded image"""
+    #returns the numeric coded image
 
     # resizing parameters
     # adjust these parameters if the output doesn't fit to the screen
@@ -48,6 +48,8 @@ if __name__ == "__main__":
     # if len(sys.argv) == 2:
     #     print("Using {} as Image Path\n".format(sys.argv[1]))
     
+    ## สาเหตุที่สปาเปลี่ยนวิธีการใช้งานโป้เเกรมจากการ bash มาเป็นการเเก้ code เเล้ว run
+    ## มีหลายคนเลยที่ใช้ bash command ไม่เป็น โอ้ว นี่มันนวัตกรร ux/ui ที่สุดยอดมากเลย ^^ 
 
     image = cv2.imread(image_path, 0)  # read image
 
