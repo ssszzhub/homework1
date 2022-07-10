@@ -7,6 +7,7 @@ import sys
 
 symbols_list = ["#", "-", "*", ".", "+", "o"]
 threshold_list = [0, 50, 100, 150, 200]
+image_path = sys.argv[1]
 
 def print_out_ascii(array):
     """prints the coded image with symbols"""
@@ -40,13 +41,13 @@ def img_to_ascii(image):
 
 if __name__ == "__main__":
 
-    if len(sys.argv) < 2:
-        print("Image Path not specified : Using sample_image.png\n")
-        image_path = "sample_image.png"  # default image path
+    # if len(sys.argv) < 2:
+    #     print("Image Path not specified : Using sample_image.png\n")
+    #     image_path = "sample_image.png"  # default image path
 
-    if len(sys.argv) == 2:
-        print("Using {} as Image Path\n".format(sys.argv[1]))
-        image_path = sys.argv[1]
+    # if len(sys.argv) == 2:
+    #     print("Using {} as Image Path\n".format(sys.argv[1]))
+    
 
     image = cv2.imread(image_path, 0)  # read image
 
